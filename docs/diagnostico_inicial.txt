@@ -1,0 +1,96 @@
+============================================================
+DIAGNÓSTICO INICIAL DA PLANILHA
+============================================================
+Arquivo: vendas_porsche_ficticias.xlsx
+Quantidade de abas: 1
+Abas encontradas: ['Sanitized']
+
+------------------------------------------------------------
+ABA: Sanitized
+------------------------------------------------------------
+Quantidade de linhas: 100
+Quantidade de colunas: 21
+
+Colunas encontradas:
+- sale_id
+- sale_date
+- SaleDateSanitized
+- customer_name
+- porsche_model
+- PorscheModelSanitized
+- model_year
+- ModelYearSanitized
+- sale_price
+- SalesPriceSanitized
+- vehicle_mileage
+- VehicleMileageSanitized
+- payment_method
+- PayMethodSanitized
+- city
+- CitySanitized
+- state
+- StateSanitized
+- salesperson
+- delivery_status
+- DeliveryStatusSanitized
+
+Tipos de dados:
+sale_id                      int64
+sale_date                   object
+SaleDateSanitized              str
+customer_name                  str
+porsche_model                  str
+PorscheModelSanitized          str
+model_year                  object
+ModelYearSanitized           int64
+sale_price                  object
+SalesPriceSanitized        float64
+vehicle_mileage             object
+VehicleMileageSanitized      int64
+payment_method                 str
+PayMethodSanitized             str
+city                           str
+CitySanitized                  str
+state                          str
+StateSanitized                 str
+salesperson                    str
+delivery_status                str
+DeliveryStatusSanitized        str
+dtype: object
+
+Valores ausentes por coluna:
+sale_id                    0
+sale_date                  0
+SaleDateSanitized          0
+customer_name              0
+porsche_model              0
+PorscheModelSanitized      0
+model_year                 0
+ModelYearSanitized         0
+sale_price                 0
+SalesPriceSanitized        0
+vehicle_mileage            0
+VehicleMileageSanitized    0
+payment_method             0
+PayMethodSanitized         0
+city                       0
+CitySanitized              0
+state                      0
+StateSanitized             0
+salesperson                0
+delivery_status            0
+DeliveryStatusSanitized    0
+dtype: int64
+
+Quantidade de linhas duplicadas:
+0
+
+Primeiras 5 linhas:
+   sale_id            sale_date  ... delivery_status DeliveryStatusSanitized
+0        6           2024-02-30  ...       delivered               Delivered
+1        7           03/14/2024  ...       DELIVERED               Delivered
+2        8  2024-04-18 00:00:00  ...      in Transit              In Transit
+3        9     April 31st, 2024  ...         Pending                 Pending
+4       10  2024-05-22 00:00:00  ...    delivered!!!               Delivered
+
+[5 rows x 21 columns]
