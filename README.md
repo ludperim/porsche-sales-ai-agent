@@ -474,6 +474,28 @@ Ele exibe:
 
 O dashboard continua funcionando mesmo quando a API da Groq está indisponível.
 
+## Capturas do dashboard
+
+### Visão geral e filtros
+
+![Visão geral e filtros](docs/images/dashboard-visao-geral.png)
+
+### Indicadores e portfólio
+
+![Indicadores e portfólio](docs/images/dashboard-performance-portfolio.png)
+
+### Mercado local
+
+![Insights por cidade](docs/images/dashboard-mercadolocal.png)
+
+### Leitura executiva com IA
+
+![Leitura executiva](docs/images/dashboard-leitura-executiva.png)
+
+### Operação e rastreabilidade
+
+![Tabela operacional](docs/images/dashboard-operacao.png)
+
 ## Instalação
 
 ### 1. Clone o repositório
