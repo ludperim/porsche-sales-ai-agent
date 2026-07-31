@@ -12,7 +12,7 @@ O estado com maior faturamento é o TX, com um faturamento total de US$ 2.023.40
 
 ### Formas de pagamento
 
-A categoria com maior quantidade de pedidos é o Bank Transfer, com 40 pedidos. A categoria com maior faturamento também é o Bank Transfer, com um faturamento total de US$ 5.422.950,50.
+A categoria com maior quantidade de pedidos é Bank Transfer, com 40 pedidos, e também a categoria com maior faturamento, com US$ 5.422.950,50.
 
 ### Qualidade dos dados
 
@@ -20,8 +20,8 @@ A qualidade geral dos dados é de 97,0%. No entanto, há um problema com as data
 
 ### Pontos de atenção
 
-Os dados não permitem concluir sobre possíveis riscos, pois não há informações suficientes sobre as causas dos faturamentos cancelados ou sobre a relação entre as formas de pagamento e os pedidos.
+Os dados mostram que há um faturamento cancelado de US$ 625.250,00, o que pode ser um ponto de atenção. Além disso, a quantidade de pedidos cancelados é de 7.
 
 ### Conclusão
 
-Em resumo, o total de pedidos é de 100, com um faturamento bruto de US$ 12.827.800,50 e um faturamento realizado de US$ 5.078.800,50. Os modelos Taycan 4S, Cayenne Coupe, Cayenne E-Hybrid, Macan Electric, Panamera e Macan T são os mais vendidos, com 4 pedidos cada. O estado TX tem o maior faturamento, e o Bank Transfer é a forma de pagamento mais utilizada. No entanto, a qualidade dos dados é afetada por 24 datas inválidas, o que limita a análise temporal.
+Em resumo, o total de pedidos é de 100, com um faturamento bruto de US$ 12.827.800,50 e um faturamento realizado de US$ 5.078.800,50. Os modelos Taycan 4S, Cayenne Coupe, Cayenne E-Hybrid, Macan Electric, Panamera e Macan T são os mais vendidos, com 4 pedidos cada. O estado TX tem o maior faturamento, e a categoria Bank Transfer tem a maior quantidade de pedidos e faturamento. A qualidade dos dados é boa, mas há um problema com as datas inválidas. Os pontos de atenção incluem o faturamento cancelado e a quantidade de pedidos cancelados.
