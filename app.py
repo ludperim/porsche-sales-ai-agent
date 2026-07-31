@@ -5,6 +5,12 @@ import pandas as pd
 import plotly.express as px
 import streamlit as st
 
+from src.agente_ia import (
+    CAMINHO_RESUMO_IA,
+    exportar_resumo,
+    gerar_resumo_executivo,
+)
+
 
 CAMINHO_DADOS = Path(
     "data/processed/vendas_porsche_sanitizadas.xlsx"
@@ -57,10 +63,72 @@ def carregar_json(caminho: Path) -> dict:
         return json.load(arquivo)
 
 
+def carregar_resumo_ia(caminho: Path) -> str | None:
+    """Carrega o resumo executivo gerado pela IA."""
+
+    if not caminho.exists():
+        return None
+
+    conteudo = caminho.read_text(
+        encoding="utf-8"
+    ).strip()
+
+    return conteudo or None
+
+
 def formatar_moeda(valor: float) -> str:
     """Formata valores monetários em dólar."""
 
     return f"US$ {valor:,.2f}"
+
+
+def exibir_resumo_ia() -> None:
+    """Exibe e permite atualizar o resumo executivo."""
+
+    st.subheader("Resumo executivo com IA")
+
+    st.caption(
+        "O texto é produzido pela Groq a partir dos indicadores "
+        "calculados pelo Python. A IA não realiza os cálculos."
+    )
+
+    resumo_atual = carregar_resumo_ia(
+        CAMINHO_RESUMO_IA
+    )
+
+    if resumo_atual:
+        st.markdown(resumo_atual)
+    else:
+        st.info(
+            "Nenhum resumo executivo foi gerado ainda."
+        )
+
+    if st.button(
+        "Gerar novo resumo com IA",
+        type="primary",
+    ):
+        try:
+            with st.spinner(
+                "Analisando os indicadores..."
+            ):
+                novo_resumo = gerar_resumo_executivo()
+
+                exportar_resumo(
+                    novo_resumo,
+                    CAMINHO_RESUMO_IA,
+                )
+
+            st.success(
+                "Resumo executivo gerado com sucesso."
+            )
+
+            st.markdown(novo_resumo)
+
+        except Exception as erro:
+            st.error(
+                "Não foi possível gerar o resumo executivo. "
+                f"Detalhes: {type(erro).__name__}: {erro}"
+            )
 
 
 def exibir_dashboard() -> None:
@@ -69,7 +137,7 @@ def exibir_dashboard() -> None:
     st.title("Porsche Sales AI Agent")
 
     st.write(
-        "Dashboard gerado a partir da planilha fictícia "
+        "Dashboard criado a partir de uma planilha fictícia "
         "de vendas da Porsche."
     )
 
@@ -139,6 +207,10 @@ def exibir_dashboard() -> None:
         "Vendas canceladas",
         indicadores["vendas_canceladas"],
     )
+
+    st.divider()
+
+    exibir_resumo_ia()
 
     st.divider()
 
@@ -245,7 +317,10 @@ def exibir_dashboard() -> None:
         pagamentos,
         names="forma_pagamento",
         values="faturamento_total",
-        title="Participação no faturamento por forma de pagamento",
+        title=(
+            "Participação no faturamento "
+            "por forma de pagamento"
+        ),
     )
 
     st.plotly_chart(

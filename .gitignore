@@ -216,3 +216,11 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Variáveis de ambiente e credenciais
+.env
+.env.*
+!.env.example
+
+# Segredos do Streamlit
+.streamlit/secrets.toml
