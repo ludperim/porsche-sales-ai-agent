@@ -1,0 +1,47 @@
+{
+  "total_registros": 100,
+  "total_colunas_exportadas": 30,
+  "qualidade_geral_percentual": 97.0,
+  "campos": {
+    "datas": {
+      "validos": 76,
+      "invalidos": 24,
+      "percentual_valido": 76.0
+    },
+    "anos_modelo": {
+      "validos": 100,
+      "invalidos": 0,
+      "percentual_valido": 100.0
+    },
+    "precos": {
+      "validos": 100,
+      "invalidos": 0,
+      "percentual_valido": 100.0
+    },
+    "quilometragens": {
+      "validos": 100,
+      "invalidos": 0,
+      "percentual_valido": 100.0
+    },
+    "formas_pagamento": {
+      "validos": 100,
+      "invalidos": 0,
+      "percentual_valido": 100.0
+    },
+    "cidades": {
+      "validos": 100,
+      "invalidos": 0,
+      "percentual_valido": 100.0
+    },
+    "estados": {
+      "validos": 100,
+      "invalidos": 0,
+      "percentual_valido": 100.0
+    },
+    "status_entrega": {
+      "validos": 100,
+      "invalidos": 0,
+      "percentual_valido": 100.0
+    }
+  }
+}
