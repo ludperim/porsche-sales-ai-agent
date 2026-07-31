@@ -1,0 +1,171 @@
+{
+  "indicadores_gerais": {
+    "total_pedidos": 100,
+    "faturamento_bruto": 12827800.5,
+    "faturamento_realizado": 5078800.5,
+    "faturamento_cancelado": 625250.0,
+    "ticket_medio": 128278.01,
+    "menor_venda": 58900.0,
+    "maior_venda": 286500.0,
+    "vendas_entregues": 41,
+    "vendas_canceladas": 7
+  },
+  "destaques": {
+    "modelos_mais_vendidos": [
+      "Taycan 4S",
+      "Cayenne Coupe",
+      "Cayenne E-Hybrid",
+      "Macan Electric",
+      "Panamera",
+      "Macan T"
+    ],
+    "quantidade_por_modelo_lider": 4,
+    "modelo_maior_faturamento": "911 Dakar",
+    "valor_modelo_maior_faturamento": 810600.0,
+    "estado_maior_faturamento": "TX",
+    "valor_estado_maior_faturamento": 2023400.5,
+    "forma_pagamento_maior_faturamento": "Bank Transfer",
+    "valor_pagamento_maior_faturamento": 5422950.5
+  },
+  "top_10_modelos": [
+    {
+      "modelo": "Taycan 4S",
+      "quantidade_vendas": 4,
+      "faturamento_total": 514300.0
+    },
+    {
+      "modelo": "Cayenne Coupe",
+      "quantidade_vendas": 4,
+      "faturamento_total": 436250.0
+    },
+    {
+      "modelo": "Cayenne E-Hybrid",
+      "quantidade_vendas": 4,
+      "faturamento_total": 373650.0
+    },
+    {
+      "modelo": "Macan Electric",
+      "quantidade_vendas": 4,
+      "faturamento_total": 360100.0
+    },
+    {
+      "modelo": "Panamera",
+      "quantidade_vendas": 4,
+      "faturamento_total": 304400.0
+    },
+    {
+      "modelo": "Macan T",
+      "quantidade_vendas": 4,
+      "faturamento_total": 302000.0
+    },
+    {
+      "modelo": "911 Dakar",
+      "quantidade_vendas": 3,
+      "faturamento_total": 810600.0
+    },
+    {
+      "modelo": "911 Turbo S",
+      "quantidade_vendas": 3,
+      "faturamento_total": 726300.0
+    },
+    {
+      "modelo": "911 GT3",
+      "quantidade_vendas": 3,
+      "faturamento_total": 697500.0
+    },
+    {
+      "modelo": "Cayenne Turbo GT",
+      "quantidade_vendas": 3,
+      "faturamento_total": 592800.0
+    }
+  ],
+  "top_10_estados": [
+    {
+      "estado": "TX",
+      "quantidade_vendas": 14,
+      "faturamento_total": 2023400.5
+    },
+    {
+      "estado": "CA",
+      "quantidade_vendas": 16,
+      "faturamento_total": 1973350.0
+    },
+    {
+      "estado": "AZ",
+      "quantidade_vendas": 7,
+      "faturamento_total": 695950.0
+    },
+    {
+      "estado": "NV",
+      "quantidade_vendas": 4,
+      "faturamento_total": 643400.0
+    },
+    {
+      "estado": "FL",
+      "quantidade_vendas": 6,
+      "faturamento_total": 566600.0
+    },
+    {
+      "estado": "OH",
+      "quantidade_vendas": 4,
+      "faturamento_total": 523850.0
+    },
+    {
+      "estado": "NC",
+      "quantidade_vendas": 5,
+      "faturamento_total": 510100.0
+    },
+    {
+      "estado": "GA",
+      "quantidade_vendas": 3,
+      "faturamento_total": 434800.0
+    },
+    {
+      "estado": "LA",
+      "quantidade_vendas": 2,
+      "faturamento_total": 361400.0
+    },
+    {
+      "estado": "VA",
+      "quantidade_vendas": 3,
+      "faturamento_total": 358700.0
+    }
+  ],
+  "formas_pagamento": [
+    {
+      "forma_pagamento": "Bank Transfer",
+      "quantidade_vendas": 40,
+      "faturamento_total": 5422950.5
+    },
+    {
+      "forma_pagamento": "Credit Card",
+      "quantidade_vendas": 15,
+      "faturamento_total": 1987700.0
+    },
+    {
+      "forma_pagamento": "Financing",
+      "quantidade_vendas": 13,
+      "faturamento_total": 1426650.0
+    },
+    {
+      "forma_pagamento": "Cash",
+      "quantidade_vendas": 12,
+      "faturamento_total": 1326550.0
+    },
+    {
+      "forma_pagamento": "Leasing",
+      "quantidade_vendas": 10,
+      "faturamento_total": 1254600.0
+    },
+    {
+      "forma_pagamento": "Crypto",
+      "quantidade_vendas": 6,
+      "faturamento_total": 1083000.0
+    },
+    {
+      "forma_pagamento": "Debit Card",
+      "quantidade_vendas": 4,
+      "faturamento_total": 326350.0
+    }
+  ]
+}
